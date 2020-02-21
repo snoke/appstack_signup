@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Appstack::Registrierung{% endblock %}
+
+{% block body %}
+<img src="logo_small.png" />
+    <h1>Jetzt registrieren</h1> <h2>und gratis E-Mail-Adresse sichern!</h2>
+<div class="" style="margin: auto;width:300px;">
+<hr />
+{% if error is defined %}
+{{error}}
+{% endif %}
+{{form(form, { 'attr' : { 'class': 'propform' } })}}
+<hr />
+Sie haben schon einen Account? <a href="https://mail.appstack.de">Zur Mailbox!</a>
+<p class="text-muted"><a href="https://support.appstack.de">Support</a>
+&nbsp;•&nbsp; 
+<a target="_blank" href="https://support.appstack.de/impressum.html">Impressum</a>
+</p></div>
+{% endblock %}
