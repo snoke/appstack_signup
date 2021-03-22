@@ -1,5 +1,7 @@
 <?php
 namespace App\DovecotAuthenticator;
+
+// Source: https://gist.github.com/wrossmann/7685647#file-doveadmauth-php
 class DoveadmAuth {
 	public static function encodepw($crypt, $password) {
 		$descriptors = array(
